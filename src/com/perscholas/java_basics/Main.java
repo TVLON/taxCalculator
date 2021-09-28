@@ -14,7 +14,7 @@ public class Main {
      if income and taxrate
      display 
       */
-        System.out.println("Enter status: ");
+       /* System.out.println("Enter status: ");
         String userStatus = input.nextLine();
         System.out.println("Enter income: ");
         int userIncome = input.nextInt();
@@ -86,6 +86,31 @@ public class Main {
         } else if (userStatus.equalsIgnoreCase("head") && userIncome >= 372951) {
             System.out.println("Your tax rate is 35%");
         }
+
+    */
+        System.out.println("Enter your birth year: ");
+        int userYear = input.nextInt();
+        int year = userYear % 12;
+        String output;
+
+        switch(year){
+            case 0: System.out.println("Monkey"); break;
+            case 1: System.out.println("Rooster"); break;
+            case 2: System.out.println("Dog"); break;
+            case 3: System.out.println("Pig"); break;
+            case 4: System.out.println("Rat"); break;
+            case 5: System.out.println("Ox"); break;
+            case 6: System.out.println("Tiger"); break;
+            case 7: System.out.println("Rabbit"); break;
+            case 8: System.out.println("Dragon"); break;
+            case 9: System.out.println("Snake"); break;
+            case 10: System.out.println("Horse"); break;
+            case 11: System.out.println("Sheep"); break;
+            default : System.out.println("null"); break;
+        }
+
+
+
 
     }//end main
 }//end class
