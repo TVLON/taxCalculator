@@ -87,7 +87,7 @@ public class Main {
             System.out.println("Your tax rate is 35%");
         }
 
-    */
+
         System.out.println("Enter your birth year: ");
         int userYear = input.nextInt();
         int year = userYear % 12;
@@ -108,6 +108,20 @@ public class Main {
             case 11: System.out.println("Sheep"); break;
             default : System.out.println("null"); break;
         }
+*/
+        double userWeight;
+        double userHeight;
+        double sqrHeight;
+        double bmi;
+
+        System.out.println("Enter your height in meters: ");
+        userHeight = input.nextDouble();
+        System.out.println("Enter your weight in kilograms: ");
+        userWeight = input.nextDouble();
+        sqrHeight = (userHeight * userHeight);
+        bmi = userWeight / sqrHeight;
+        System.out.printf("Your BMI is %.2f :", bmi);
+
 
 
 
